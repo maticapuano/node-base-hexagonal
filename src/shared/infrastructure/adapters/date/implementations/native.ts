@@ -9,49 +9,37 @@ export class DateAdapterNative extends DateAdapter {
     return new Date();
   }
 
-  public addDays(days: number): Date {
-    const date = this.now();
-
+  public addDays(date: Date, days: number): Date {
     date.setDate(date.getDate() + days);
 
     return date;
   }
 
-  public addHours(hours: number): Date {
-    const date = this.now();
-
+  public addHours(date: Date, hours: number): Date {
     date.setHours(date.getHours() + hours);
 
     return date;
   }
 
-  public addMinutes(minutes: number): Date {
-    const date = this.now();
-
+  public addMinutes(date: Date, minutes: number): Date {
     date.setMinutes(date.getMinutes() + minutes);
 
     return date;
   }
 
-  public subtractDays(days: number): Date {
-    const date = this.now();
-
+  public subtractDays(date: Date, days: number): Date {
     date.setDate(date.getDate() - days);
 
     return date;
   }
 
-  public subtractHours(hours: number): Date {
-    const date = this.now();
-
+  public subtractHours(date: Date, hours: number): Date {
     date.setHours(date.getHours() - hours);
 
     return date;
   }
 
-  public subtractMinutes(minutes: number): Date {
-    const date = this.now();
-
+  public subtractMinutes(date: Date, minutes: number): Date {
     date.setMinutes(date.getMinutes() - minutes);
 
     return date;
