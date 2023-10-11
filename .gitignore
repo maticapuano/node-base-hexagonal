@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+error.log
+*.env
+dist
+.DS_Store
+Thumbs.db
+.vscode/
+yarn-error.log
+.pnp.*
+.pnp.js
