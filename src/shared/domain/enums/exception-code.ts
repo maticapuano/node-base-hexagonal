@@ -9,4 +9,5 @@ export enum ExceptionCode {
   UNPROCESSABLE_ENTITY = 'unprocessable_entity',
   INVALID_JSON = 'invalid_json',
   VALIDATION_FAILED = 'validation_failed',
+  INVALID_ARGUMENT = 'invalid_argument',
 }

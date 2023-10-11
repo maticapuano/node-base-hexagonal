@@ -11,7 +11,7 @@
     "start:dev": "tsc && tsc-alias && nodemon -r dotenv/config dist/shared/infrastructure/http/server.js",
     "docs": "compodoc -p tsconfig.json -s --port 8080 --theme light --hideGenerator --disableSourceCode --disableGraph --output docs",
     "test": "jest",
-    "test:watch": "jest --watch --coverage --verbose --detectOpenHandles  --silent",
+    "test:watch": "jest --watch --verbose --silent",
     "build": "tsc && tsc-alias"
   },
   "dependencies": {
