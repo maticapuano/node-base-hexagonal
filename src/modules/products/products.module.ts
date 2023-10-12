@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { CreateProductUseCase } from './application/create/case';
 import { GetAllProductsUseCase } from './application/get-all/case';
 import { GetProductByIdUseCase } from './application/get-by-id/case';
 import { ProductRepository } from './domain/repositories/product.repository';
@@ -13,6 +14,7 @@ import { ProductMemoryRepository } from './infrastructure/persistence/memory/rep
     },
     GetAllProductsUseCase,
     GetProductByIdUseCase,
+    CreateProductUseCase,
   ],
   controllers: [ProductsController],
   exports: [ProductRepository],

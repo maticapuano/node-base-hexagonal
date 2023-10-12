@@ -24,6 +24,12 @@ export class ProductMemoryRepository extends ProductRepository {
     return Promise.resolve(product ?? null);
   }
 
+  public async exists(name: string): Promise<boolean> {
+    const product = await this.products.find(({ name: productName }) => productName === name);
+
+    return Promise.resolve(!!product);
+  }
+
   public create(data: CreateProduct): Promise<Product> {
     const product: Product = {
       id: this.idGeneratorAdapter.generate(),
